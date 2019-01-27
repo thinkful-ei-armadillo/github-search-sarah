@@ -29,7 +29,7 @@ function fetchSearchResults(url){
 function createSearchURL(users) {
     //create URLs for users.
     //split at the spaces and then join with & so it can be read as URL    
-        const queryString= users.split(' ').join('&');
+        const queryString= users.split(' ').join();
     //create the full URL by building on the BASE_URL and adding the query string and repos     
         const fullURL= `${BASE_URL}/${queryString}/repos`;
     //put the fullURL through fetchResults
@@ -46,7 +46,7 @@ function renderForm(){
          const users= $('.user-search-input').val();
          createSearchURL(users);
 
-     console.log(fullURL);
+    // console.log(fullURL);
      })
  }
 

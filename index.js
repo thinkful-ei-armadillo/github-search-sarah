@@ -1,3 +1,9 @@
+//search github users
+// trigger call to github's API
+// repos must appear and have link to URL
+//make multiple searches and see only results for current search
+
+
 'use strict';
 
 //no API_KEY needed for GitHub
